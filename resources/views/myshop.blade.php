@@ -1,16 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-<h1>เกี่ยวกับ IT Shop</h1>
-    <ul>
-        <li>ที่อยู่ร้าน: </li>
-        <li>เบอร์โทร: </li>
-        <li>ที่ตั้งร้าน:</li>
-    <ul>
-</body>
-</html>
+@extends('layouts.myapp')
+
+@section('content')
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h6>เกี่ยวกับ IT Shop</h6>
+            </div>
+
+            <div class="card-body">
+                <ul>
+                    <li>ที่อยู่ร้าน: {{$address}}</li>
+                    <li>เบอร์โทร: {{$mobliephone}}</li>
+                    <li>ที่ตั้งร้าน: {{$location}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+@endsection
