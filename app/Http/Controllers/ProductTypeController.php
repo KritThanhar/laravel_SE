@@ -6,6 +6,13 @@ use Illuminate\Http\Request;
 use App\Models\ProductType;
 class ProductTypeController extends Controller
 {
+//     public function __construct()
+// {
+// $this->middleware('auth::web', ['only' => ['create', 'store', 'edit',
+// 'delete']]);
+// // or
+// $this->middleware('auth::web', ['except' => ['index', 'show']]);
+// }
     /**
      * Display a listing of the resource.
      */

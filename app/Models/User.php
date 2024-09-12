@@ -11,11 +11,10 @@ class User extends Authenticatable
 {
     use HasFactory, Notifiable;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
+    public function isAdmin()
+{
+return $this->user_type === 2;
+}
     protected $fillable = [
         'name',
         'email',
